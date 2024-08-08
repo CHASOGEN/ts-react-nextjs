@@ -19,3 +19,4 @@ function printName(firstName:string, formatter: Formatter){
     console.log(formatter(firstName))
 }
 
+*/

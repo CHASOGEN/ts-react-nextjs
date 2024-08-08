@@ -1,3 +1,4 @@
+/*
 interface Point {
     x: number;
     y: number;
@@ -41,3 +42,4 @@ const cc: ColorfulCircle = {
     color: '赤',
     radius: 10
 }
+*/
