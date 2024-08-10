@@ -35,3 +35,4 @@ window.confirm = () => {
     console.log('confirm 関数')
 }
 
+*/
