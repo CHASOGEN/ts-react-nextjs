@@ -19,9 +19,9 @@ class Queue<T> {
 const queue = new Queue<number>() // 数値型を扱うキューを生成します
 queue.push(111)
 queue.push(112)
-queue.push('hoge') // number 型ではないのでコンパイル時にエラーになります
+queue.push(`hoge`) // number 型ではないのでコンパイル時にエラーになります
 
-let str = 'fuga'
+let str = `fuga`
 str = queue.pop() // str は number 型ではないのでコンパイル時にエラーになります
 
 */

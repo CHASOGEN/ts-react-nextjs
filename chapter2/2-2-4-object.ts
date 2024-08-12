@@ -1,7 +1,7 @@
 // string 型の name と number 型の age のみを持つオブジェクトの型を定義
 /*
 const user: { name: string; age: number} = {
-    name: 'Takuya',
+    name: `Takuya`,
     age: 36
 }
 

@@ -21,7 +21,7 @@ class Point {
 
 const point = new Point()
 point.moveX(10)
-console.log('${point.x}','${point.y}') //10,0
+console.log(`${point.x}`,`${point.y}`) //10,0
 
 
 
@@ -44,7 +44,7 @@ const point3D = new Point3D()
 // 継承元のメソッドを呼び出すことができます
 point3D.moveX(10)
 point3D.moveZ(20)
-console.log('${point3D.x},${point3D.y},${point3D.z}') // 10,0,20
+console.log(`${point3D.x},${point3D.y},${point3D.z}`) // 10,0,20
 
 // 頭のIはインターフェースであることを示すためのもの
 interface IUser {
@@ -65,15 +65,15 @@ class User implements IUser {
 
     // インターフェースに定義されているメソッドを実装しない場合、コンパイル時にエラーになります
     sayHello():string {
-        return 'こんにちは、私は${this.name}、${this.age}歳です'
+        return `こんにちは、私は${this.name}、${this.age}歳です`
     }
 
 }
 
 const user = new User()
-user.name = 'Takuya'
+user.name = `Takuya`
 user.age = 36
-console.log(user.sayHello()) //'こんにちは私はTakuya、36歳です
+console.log(user.sayHello()) //`こんにちは私はTakuya、36歳です
 
 class BasePoint3D {
     public x: number;
