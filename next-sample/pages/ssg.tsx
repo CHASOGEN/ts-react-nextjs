@@ -9,13 +9,13 @@ type SSGProps = {}
 // SSG 向けのページを実装
 // NextPage は Next.js の Pages 向けの型
 // NextPage<props> で props が入る Page であることを明示
-const SSG: NextPages<SSGProps> = () => {
+const SSG: NextPage<SSGProps> = () => {
     return (
         <div>
             {/**Head コンポーネントで包むと、その要素は <head> タグに配置されます */}
             <Head>
                 <title>Static Site</title>
-                <link rel="icon" href="/favicon.ico/">
+                <link rel="icon" href="/favicon.ico" />
             </Head>
             <main>
                 <p>
