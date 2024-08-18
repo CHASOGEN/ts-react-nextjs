@@ -8,7 +8,7 @@ function printId(id: number | string){
 // number でも正常に動作します
 printId(11)
 // string でも正常に動作します
-printId('22')
+printId(`22`)
 
 type Id = number | string
 
@@ -33,14 +33,14 @@ type IdentityOrContact = Identity | Contact
 
 // OK
 const id: IdentityOrContact = {
-    id: '111',
-    name: 'Takuya'
+    id: `111`,
+    name: `Takuya`
 }
 
 const contact: IdentityOrContact = {
-    name: 'Takuya'
-    email: 'test@example.com'
-    phone: '012345678'
+    name: `Takuya`
+    email: `test@example.com`
+    phone: `012345678`
 }
 
 // 先述の Identity と Contact を定義
@@ -50,18 +50,18 @@ type Employee = Identity & Contact
 
 // OK 
 const employee: Employee = {
-    id: '111',
-    name: 'Takuya',
-    email: 'test@example.com',
-    phone: '012345678'
+    id: `111`,
+    name: `Takuya`,
+    email: `test@example.com`,
+    phone: `012345678`
 }
 
 /*
 // エラー：Contact 情報のみで変数を定義できません。id が必要です
 const employeeContact: Employee = {
-    name: 'Takuya',
-    email: 'test@example.com',
-    phone: '012345678'
+    name: `Takuya`,
+    email: `test@example.com`,
+    phone: `012345678`
 }
 
 */

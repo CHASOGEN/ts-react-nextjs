@@ -1,6 +1,6 @@
 /*
 
-let user: any = { fisrtName: 'Takuya'}
+let user: any = { fisrtName: `Takuya`}
 // 以下の行のコードはいずれもコンパイルエラーが起こりません
 user.hello()
 user()

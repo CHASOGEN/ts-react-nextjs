@@ -5,8 +5,8 @@ type Point = {
 }
 
 function printPoint(point: Point){
-    console.log('X座標は ${point.x} です')
-    console.log('y座標は ${point.y} です')
+    console.log(`X座標は ${point.x} です`)
+    console.log(`y座標は ${point.y} です`)
 }
 
 printPoint({ x: 100, y: 100})

@@ -5,9 +5,9 @@ interface Point {
 }
 
 function printPoint(point: Point){
-    console.log('x 座標は${point.x}です')
-    console.log('y 座標は${point.y}です')
-    console.log('z 座標は${point.z}です')
+    console.log(`x 座標は${point.x}です`)
+    console.log(`y 座標は${point.y}です`)
+    console.log(`z 座標は${point.z}です`)
 }
 
 interface Point {
@@ -39,7 +39,7 @@ interface Circle {
 interface ColorfulCircle extends Colorful, Circle {}
 
 const cc: ColorfulCircle = {
-    color: '赤',
+    color: `赤`,
     radius: 10
 }
 */
