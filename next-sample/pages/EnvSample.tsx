@@ -22,7 +22,7 @@ const EnvSample:NextPage = (props) => {
 }
 
 // getStaticProps は常にサーバーサイドで実行されるので、すべての環境構築変数を参照できる
-export const getStaticProps = async (context) => {
+export const getStaticProps = async (context:any) => {
     // 'test1'が表示される
     console.log('process.env.TEST',process.env.TEST)
     // 'test2' と表示される
