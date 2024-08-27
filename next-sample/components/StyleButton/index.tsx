@@ -18,7 +18,8 @@ const variants = {
     },
 } as const
 
-type StyledButtonProps = {
+// type StyledButtonProps = {
+export type StyledButtonProps = {
     variant: keyof typeof variants
 }
 
