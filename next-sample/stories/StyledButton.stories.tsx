@@ -10,7 +10,7 @@ export default {
     component: StyledButton,
 } as Meta<typeof StyledButton>
 
-export const Sucess = (props: StyledButtonProps) => {
+export const Primary = (props: StyledButtonProps) => {
     return (
         <StyledButton {...props} variant="primary">
             Primary
@@ -18,9 +18,17 @@ export const Sucess = (props: StyledButtonProps) => {
     )
 }
 
+export const Success = (props: StyledButtonProps) => {
+    return (
+        <StyledButton {...props} variant="success">
+            Success
+        </StyledButton>
+    )
+}
+
 export const Transparent = (props: StyledButtonProps) => {
     return (
-        <StyledButton {...props} variant="primary">
+        <StyledButton {...props} variant="transparent">
             Transparent
         </StyledButton>
     )
